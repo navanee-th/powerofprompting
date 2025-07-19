@@ -23,8 +23,16 @@
       'Strategists',
       'Researchers'
     ];
-    document.getElementById('group').textContent =
-      groups[Math.floor(Math.random() * groups.length)];
+
+    // 1) Check if we’ve already assigned this browser a group
+    let choice = localStorage.getItem('assignedGroup');
+    // 2) If not, pick one at random and save it
+    if (!choice) {
+      choice = groups[Math.floor(Math.random() * groups.length)];
+      localStorage.setItem('assignedGroup', choice);
+    }
+    // 3) Show it
+    document.getElementById('group').textContent = choice;
   </script>
 </body>
 </html>
