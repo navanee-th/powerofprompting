@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Group Assignment</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    h1 { font-size: 2em; }
+    .group { font-size: 2.5em; margin-top: 20px; color: #2c3e50; }
+  </style>
+</head>
+<body>
+  <h1>Your Group Is…</h1>
+  <div id="group" class="group">Loading…</div>
+  <script>
+    const groups = [
+      'Storytellers',
+      'Builders',
+      'Guardians',
+      'Artists',
+      'Explorers',
+      'Planners',
+      'Strategists',
+      'Researchers'
+    ];
+    document.getElementById('group').textContent =
+      groups[Math.floor(Math.random() * groups.length)];
+  </script>
+</body>
+</html>
