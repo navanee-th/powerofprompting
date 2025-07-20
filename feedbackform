@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI-Tool Demo — Feedback</title>
+
+  <!-- Make the page mobile-friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Optional: quick styling so the form is centred -->
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      max-width: 760px;
+      width: 100%;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+    h1 { margin-top: 0; text-align: center; }
+    iframe { width: 100%; border: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>We value your feedback!</h1>
+
+    <!-- Google Form embed starts -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo1pbKjsK1AetZV78vYMZUxg71fgDg64ftUGK1wh-ATxrMHg/viewform?embedded=true"
+            height="1681" loading="lazy">
+      Loading…
+    </iframe>
+    <!-- Google Form embed ends -->
+  </div>
+</body>
+</html>
